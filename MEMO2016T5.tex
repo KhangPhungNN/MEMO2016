@@ -1,0 +1,148 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage[left=1.5cm, right=1.5cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{nameref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[shortlabels]{enumitem}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+
+\begin{document}
+\textbf{(MEMO 2016 T-5 G)} Cho tam giác $ABC$ nội tiếp đường tròn $(O)$. Đường kính $AD$ của đường tròn $(O)$ cắt $BC$ tại E. Đường tròn ngoại tiếp tam giác $CDE$ cắt $AC$ tại điểm thứ hai là $P$. $PE$ cắt $AB$ tại $Q$. Đường thẳng qua $O$ song song với $PE$ cắt đường cao của tam giác $ABC$ hạ từ $A$ tại điểm $F$. Chứng minh $FB=FQ$.\\
+	
+	
+\definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+\definecolor{ccqqqq}{rgb}{0.8,0,0}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+	\clip(-9.009975818193007,-6.114124340453456) rectangle (7.603939687320738,7.268000235753545);
+	\draw[line width=1.2pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (-2.2900798173303203,-1.3003782958517136) -- (-2.621837444225186,-1.3266878948897978) -- (-2.5955278451871022,-1.6584455217846639) -- (-2.263770218292236,-1.6321359227465797) -- cycle; 
+	\draw (-4.774133338033695,-1.8312169438479333)-- (3.3367205961972832,-1.187996419083001);
+	\draw (3.3367205961972832,-1.187996419083001)-- (-2.7817185418106116,4.8990661079607465);
+	\draw (-0.8923247723766691,0.6796790149741763) circle (4.6230981231677815cm);
+	\draw (1.7484684171294973,-1.9475716453550334) circle (1.7605395504446297cm);
+	\draw (-2.7817185418106116,4.8990661079607465)-- (-5.382097122163541,-3.8848898839400876);
+	\draw (2.499867837201719,-0.3554352126976714)-- (-5.382097122163541,-3.8848898839400876);
+	\draw (-1.655889557153907,-2.2163363234836133) -- (-1.6062063649162486,-2.039384487097449);
+	\draw (-1.655889557153907,-2.2163363234836133) -- (-1.49079783471857,-2.2971143847050444);
+	\draw (-1.4411146424809116,-2.12016254831888) -- (-1.391431450243253,-1.9432107119327164);
+	\draw (-1.4411146424809116,-2.12016254831888) -- (-1.2760229200455746,-2.2009406095403112);
+	\draw [color=ccqqqq] (-2.393786789043948,0.007341323073786931)-- (2.499867837201719,-0.3554352126976714);
+	\draw [color=ccqqqq] (-2.393786789043948,0.007341323073786931)-- (-5.382097122163541,-3.8848898839400876);
+	\draw (-0.8923247723766691,0.6796790149741763)-- (-2.393786789043948,0.007341323073786931);
+	\draw (-1.8578306953833041,0.24733639385924894) -- (-1.8081475031456455,0.42428823024541196);
+	\draw (-1.8578306953833041,0.24733639385924894) -- (-1.6927389729479672,0.16655833263781786);
+	\draw (-1.6430557807103088,0.3435101690239818) -- (-1.5933725884726502,0.5204620054101449);
+	\draw  (-1.6430557807103088,0.3435101690239818) -- (-1.4779640582749718,0.2627321078025507);
+	\draw  (-2.7817185418106116,4.8990661079607465)-- (0.9970689970572733,-3.5397080780123935);
+	\draw (-2.7817185418106116,4.8990661079607465)-- (-2.263770218292236,-1.6321359227465797);
+	\draw (3.3367205961972832,-1.187996419083001)-- (0.9970689970572733,-3.5397080780123935);
+	\begin{scriptsize}
+		\draw [fill=uuuuuu] (-2.7817185418106116,4.8990661079607465) circle (2.5pt);
+		\draw[color=uuuuuu] (-2.9542899021133984,5.495221716279464) node {\normalsize $A$};
+		\draw [fill=uuuuuu] (-4.774133338033695,-1.8312169438479333) circle (2.5pt);
+		\draw[color=uuuuuu] (-5.103587753157197,-1.7841520274017184) node {\normalsize $B$};
+		\draw [fill=uuuuuu] (3.3367205961972832,-1.187996419083001) circle (2.5pt);
+		\draw[color=uuuuuu] (3.666175011320785,-1.1095548916726434) node {\normalsize $C$};
+		\draw [fill=uuuuuu] (-0.8923247723766691,0.6796790149741763) circle (2pt);
+		\draw[color=uuuuuu] (-0.7422388291413133,1.0711195703352971) node {\normalsize $O$};
+		\draw [fill=uuuuuu] (0.9970689970572733,-3.5397080780123935) circle (2pt);
+		\draw[color=uuuuuu] (1.0148513848506973,-3.8393200455530865) node {\normalsize$D$};
+		\draw [fill=uuuuuu] (0.060347374186369325,-1.4478248564184895) circle (2pt);
+		\draw[color=uuuuuu] (-0.08332999889430931,-1.7684637219196468) node {\normalsize$E$};
+		\draw [fill=uuuuuu] (2.499867837201719,-0.3554352126976714) circle (2pt);
+		\draw[color=uuuuuu] (2.662123460468208,0.035691408518577245) node {\normalsize $P$};
+		\draw [fill=uuuuuu] (-5.382097122163541,-3.8848898839400876) circle (2pt);
+		\draw[color=uuuuuu] (-5.825249805332487,-3.635372074286157) node {\normalsize $Q$};
+		\draw [fill=uuuuuu] (-2.393786789043948,0.007341323073786931) circle (2pt);
+		\draw[color=uuuuuu] (-2.2326278499381083,0.39652243460622205) node {\normalsize $F$};
+		\draw [fill=uuuuuu] (-2.263770218292236,-1.6321359227465797) circle (2pt);
+	\end{scriptsize}
+	\end{tikzpicture}
+	
+\newpage
+
+\textbf{\underline{Solutions.}}
+
+	\definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+	\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+	\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
+	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+		\clip(-9.919897536153151,-7.024046058413604) rectangle (12.84383371833263,6.358078517793397);
+		\draw[color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (-0.7271373238164898,-0.03926719440101613) -- (-0.5977337108887417,-0.345877733955193) -- (-0.2911231713345648,-0.216474121027445) -- (-0.42052678426231277,0.09013641852673192) -- cycle; 
+		\draw[color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (-4.439620757986331,-3.093173277459078) -- (-4.118962753299477,-3.182244945427649) -- (-4.029891085330906,-2.8615869407407946) -- (-4.35054909001776,-2.7725152727722238) -- cycle; 
+		\draw (-4.35054909001776,-2.7725152727722238)-- (3.619110094874576,-2.6156322179515086);
+		\draw (3.619110094874576,-2.6156322179515086)-- (-2.3110693773484603,4.5696116928372446);
+		\draw (-0.42052678426231277,0.09013641852673192) circle (4.8620828900207105cm);
+		\draw (-2.3110693773484603,4.5696116928372446)-- (-4.995734855360166,-5.095184028004883);
+		\draw (2.911320892238643,-1.7580463586730506)-- (-4.995734855360166,-5.095184028004883);
+		\draw (-2.208040099602025,-0.6642756166816792)-- (2.911320892238643,-1.7580463586730506);
+		\draw (-2.208040099602025,-0.6642756166816792)-- (-4.995734855360166,-5.095184028004883);
+		\draw (-0.42052678426231277,0.09013641852673192)-- (-2.208040099602025,-0.6642756166816792);
+		\draw (-2.3110693773484603,4.5696116928372446)-- (1.4700158088238349,-4.389338855783781);
+		\draw (-2.3110693773484603,4.5696116928372446)-- (-2.167385296632214,-2.729539607548099);
+		\draw (3.619110094874576,-2.6156322179515086)-- (1.4700158088238349,-4.389338855783781);
+		\draw (-2.208040099602025,-0.6642756166816792)-- (1.4700158088238349,-4.389338855783781);
+		\draw (1.4700158088238349,-4.389338855783781)-- (-4.995734855360166,-5.095184028004883);
+		\draw (1.4700158088238349,-4.389338855783781)-- (-4.35054909001776,-2.7725152727722238);
+		\draw (-0.42052678426231277,0.09013641852673192)-- (-4.35054909001776,-2.7725152727722238);
+		\begin{scriptsize}
+			\draw [fill=uuuuuu] (-2.3110693773484603,4.5696116928372446) circle (2.5pt);
+			\draw[color=uuuuuu] (-2.483640737651247,5.165767301155962) node {\normalsize$A$};
+			\draw [fill=uuuuuu] (-4.35054909001776,-2.7725152727722238) circle (2.5pt);
+			\draw[color=uuuuuu] (-4.6800035051412605,-2.7254503563260095) node {\normalsize$B$};
+			\draw [fill=uuuuuu] (3.619110094874576,-2.6156322179515086) circle (2.5pt);
+			\draw[color=uuuuuu] (3.9485645099980777,-2.537190690541151) node {\normalsize$C$};
+			\draw [fill=uuuuuu] (-0.42052678426231277,0.09013641852673192) circle (2pt);
+			\draw[color=uuuuuu] (-0.2559013591970907,0.47496396201657964) node {\normalsize$O$};
+			\draw [fill=uuuuuu] (1.4700158088238349,-4.389338855783781) circle (2pt);
+			\draw[color=uuuuuu] (1.4855005493128486,-4.686488541584948) node {\normalsize$D$};
+			\draw [fill=uuuuuu] (0.7453063337789487,-2.672203158130556) circle (2pt);
+			\draw[color=uuuuuu] (0.5912671368347716,-2.9850866330750105) node {\normalsize$E$};
+			\draw [fill=uuuuuu] (2.911320892238643,-1.7580463586730506) circle (2pt);
+			\draw[color=uuuuuu] (3.070019403002073,-1.3605677793857875) node {\normalsize$P$};
+			\draw [fill=uuuuuu] (-4.995734855360166,-5.095184028004883) circle (2pt);
+			\draw[color=uuuuuu] (-5.433042168280694,-5.343371596405664) node {\normalsize$Q$};
+			\draw [fill=uuuuuu] (-2.208040099602025,-0.6642756166816792) circle (2pt);
+			\draw[color=uuuuuu] (-2.044368184153244,-0.2780747011228531) node {\normalsize$F$};
+			\draw [fill=uuuuuu] (-2.167385296632214,-2.729539607548099) circle (2pt);
+		\end{scriptsize}
+	\end{tikzpicture}
+
+Dễ có các tứ giác $ABDC,CPED$ nội tiếp.\\
+
+Ta có: $\widehat{QAD}\equiv\widehat{BAD}=\widehat{BCD}\equiv\widehat{ECD}=\widehat{EPD}\equiv\widehat{QPD}\Rightarrow$ Tứ giác $QACD$ nội tiếp.\\
+
+$\widehat{ACD}=90^{\circ}$ (góc nội tiếp chắn nửa đường tròn) $\Rightarrow\widehat{AEP}=90^{\circ}$ Hay $AD\perp{PQ}$. Mà $OF\parallel{PQ}\Rightarrow{OF}\perp{AD}$. Ta lại có $O$ là trung điểm $AD$, do đó $OF$ là trung trực của $AD\Rightarrow{FA}=FD$.\\
+
+$\Rightarrow\triangle{FAD}$ cân tại $F.\Rightarrow\widehat{FAD}=\widehat{FDA}$.\\
+
+Ta có $\widehat{ABD}=90^{\circ}$ (góc nội tiếp chắn nửa đường tròn) và $\widehat{QDE}=90^{\circ}\Rightarrow$ Tứ giác $BEDQ$ nội tiếp.\\
+
+Ta có: $\widehat{FAD}+\widehat{AEB}=90^{\circ}(AF\perp{BC});\enspace\widehat{QDB}+\widehat{AQD}=90^{\circ}$. Mà $\widehat{AEB}=\widehat{AQD}$ (Tứ giác $BEDQ$ nội tiếp). Nên $\widehat{FAO}=\widehat{QDB}\Rightarrow\widehat{ODF}=\widehat{BDQ}$.\\
+
+Xét $\triangle{ODF}$ và $\triangle{BDQ}$:
+\begin{enumerate}[ ]
+	\item $\widehat{ODF}=\widehat{BDQ}$
+	\item $\widehat{DOF}=\widehat{DBQ}=90^{\circ}$
+\end{enumerate} 
+$\Rightarrow\triangle{ODF}\sim\triangle{BDQ}\Rightarrow\dfrac{DO}{DB}=\dfrac{DF}{DQ}\Rightarrow\dfrac{DQ}{DB}=\dfrac{DF}{DO}\qquad$(1)\\
+
+Có $\widehat{ODF}=\widehat{BDQ}\Rightarrow\widehat{ODF}+\widehat{FDB}=\widehat{BDQ}+\widehat{FDB}\Rightarrow\widehat{FDQ}=\widehat{ODB}\qquad$(2)\\
+
+Từ (1) và (2) suy ra $\triangle{FDQ}\sim\triangle{ODB}$. Mà $\triangle{ODB}$ cân nên $\triangle{FDQ}$ cân. Do đó $FD=FQ$ mà ta lại có $FD=FA$ kết hợp với tứ giác $APDQ$ nội tiếp nên $F$ là tâm của đường tròn ngoại tiếp tứ giác $APDQ$. Từ đó ta có $FP=FQ$
+
+
+
+
+\end{document}
